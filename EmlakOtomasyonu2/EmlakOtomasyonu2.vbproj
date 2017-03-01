@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F676A522-14D7-4989-9773-3512F1F20003}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>EmlakOtomasyonu2.My.MyApplication</StartupObject>
+    <RootNamespace>EmlakOtomasyonu2</RootNamespace>
+    <AssemblyName>EmlakOtomasyonu2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>EmlakOtomasyonu2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>EmlakOtomasyonu2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>EmlakOtomasyonu2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>EmlakOtomasyonu2.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="AxWMPLib" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="WMPLib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arsa.vb" />
+    <Compile Include="AtolyeBuroDukkanImaAVM.vb" />
+    <Compile Include="Bina.vb" />
+    <Compile Include="BufeDugunSpaSineOto.vb" />
+    <Compile Include="Currency.vb" />
+    <Compile Include="DepoBinaPlazaFabrika.vb" />
+    <Compile Include="Emlak.vb" />
+    <Compile Include="EmlakOtomasyonuDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmlakOtomasyonuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakSahibi.vb" />
+    <Compile Include="frmArama.Designer.vb">
+      <DependentUpon>frmArama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmArama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIlanVer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIlanVer.Designer.vb">
+      <DependentUpon>frmIlanVer.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIlanAra.Designer.vb">
+      <DependentUpon>frmIlanAra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIlanAra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfil.Designer.vb">
+      <DependentUpon>frmProfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVideoPlayer.Designer.vb">
+      <DependentUpon>frmVideoPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVideoPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Giris.Designer.vb">
+      <DependentUpon>frm_Giris.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Giris.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Isyeri.vb" />
+    <Compile Include="Konut.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Kontrol.vb" />
+    <Compile Include="SporRadyoPazarCiftlik.vb" />
+    <Compile Include="SQLEmlak.vb" />
+    <Compile Include="Turistik_Tesis.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmArama.resx">
+      <DependentUpon>frmArama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIlanVer.resx">
+      <DependentUpon>frmIlanVer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIlanAra.resx">
+      <DependentUpon>frmIlanAra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfil.resx">
+      <DependentUpon>frmProfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVideoPlayer.resx">
+      <DependentUpon>frmVideoPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Giris.resx">
+      <DependentUpon>frm_Giris.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EmlakOtomasyonuDataSet.xsc">
+      <DependentUpon>EmlakOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmlakOtomasyonuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmlakOtomasyonuDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmlakOtomasyonuDataSet.xss">
+      <DependentUpon>EmlakOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\185_TWVnYXBob25lIGljb24uanBn %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass-914922.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanAra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanVer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devIY.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kirIY.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satIY.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanAra_gri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanVer_gri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear_log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanArama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanAraRenk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanVerme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanVerRenk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkmark2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\More2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkmark3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\More3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\step1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\step2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\step3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\degistir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaldir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC275-careers-in-realestate-shadow3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multimedia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capturesmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nextimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previmg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanAra_saydam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanVer_saydam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanAra_saydam1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanVer_saydam1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanAra1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilanVer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transblack.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
