@@ -6,4 +6,4 @@
 - Muhammed Kujundzic
 
 AraVer'i calistirmadan script'i kullanarak gerekli veritabani tablolar olusturulmali.
-Il, Ilce, Mahalle, vb.. ile ilgili scriptleri bulamaz iseniz bana e-postamda ulasabilirsiniz.
+Il, Ilce, Mahalle, vb.. ile ilgili scriptleri bulamaz iseniz bana e-postamdan ulasabilirsiniz.
